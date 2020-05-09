@@ -1,0 +1,198 @@
+*, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	padding-top: 80px;
+	/* padding-bottom: 80px; */
+	min-height: 100%;
+}
+html{min-height: 100%;}
+
+main{
+	margin-bottom: 80px;
+	min-height: 100%;
+}
+
+/******************  Header  ***********************/
+.navbar-default .navbar-brand {
+	color: rgb(0, 120, 233);
+	font-size: 20px;
+	line-height: 29px;
+}
+.navbar-default .navbar-brand:hover {
+	color: rgba(255, 166, 0, 0.911);
+}
+.navbar-default .navbar-nav li:hover{
+	background-color:silver;
+	color: black;
+}
+.navbar-default .navbar-nav>li>a{
+	color:black;
+}
+
+li#contact-info-dropdown-items {
+	font-size: 16px;
+	width: 250px;
+	margin: 0px;
+}
+
+.dropdown-menu {
+	padding: 0px;
+}
+.dropdown-menu>li>a{
+	padding: 20px;
+}
+
+/* right side --  */
+.social-icons {
+	width: 30px;
+	height: auto;
+}
+
+/* navbar collapse */
+.navbar-collapse li{
+	text-align: center;
+}
+.navbar-collapse .social-icons-area a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ul.navbar-nav li.social-icons-area:hover {
+	background-color: transparent;
+}
+ul.navbar-nav li.social-icons-area {
+	padding-bottom: 10px;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: 500px;
+}
+
+.navbar-nav li {
+	font-size: 16px;
+}
+
+.navbar-nav>li>a{
+	line-height: 33px;
+}
+
+/******************  self intro  ***********************/
+/* profile image */
+img#profile_picture{
+	display: block;
+	margin-left: 180px;
+	margin-right: auto;
+	width: 30%;
+	border-radius: 50%;
+	box-shadow: -0.5px 1.9px #cacaca;
+}
+
+#self-intro p {
+	font-size: 18px;
+}
+
+/******************  Body  ***********************/
+/* project item */
+#projectBox{
+	/* background-color: black; */
+	margin-top: 10px;
+	border-style: solid;
+	border-color: rgba(133, 133, 133, 0.575);
+	border-radius: 20px;
+	border-width: 1.8px;
+}
+
+.language-list {
+	text-align: center;
+	margin-top: 20px;
+}
+.language-list li {
+	display: inline-block;
+	padding-right: 40px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.language-icons {
+	width: 30px;
+	height: auto;
+}
+p#progLangName {
+	display: inline;
+	vertical-align: -1px;
+	padding-left: 5px;
+}
+
+
+/* to reset the negative margins in bootstrap in order to create the gaps between the project box */
+.row {
+	margin: 0;
+}
+
+a#projectContainerBox:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+#projectBox {
+	transition-duration: 0.15s;
+}
+#projectBox:hover {
+	background-color: rgba(210, 211, 211, 0.151);
+}
+
+#imageSpace {
+	height: 100%;
+}
+
+#imageSpace img {
+	width: 60%;
+	height: auto;
+	margin: auto;
+}
+
+div#imageSpace {
+	text-align: center;
+	/* vertical-align: middle; */
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+img#abnb_screeplot {
+	width: 60%;
+	height: auto;
+}
+
+.projectSummary {
+	color: rgb(36, 36, 36);
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.language-used {
+	color: rgba(37, 113, 255, 0.897);
+}
+
+/* footer */
+.footer {
+	/* position: absolute; */
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(192, 192, 192, 0.397);
+	padding: 20px;
+	font-size: larger;
+	color: rgba(235, 0, 90, 0.822);
+}
+.footer-infosign{
+	text-align: right;
+	font-size: 40px;
+	padding: 25px;
+}
+
+/* media queries */
+@media (max-width:991px) {
+	/* set the self intro to center */
+	section#self-intro {
+		text-align: center;
+	}
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Eddie Lam's Website</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- styles css -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Eddie Lam</a>
+            <!-- toggle button -->
+            <button id = "navbarToggle" type="button" class="navbar-toggle navbar-btn visible-xs" data-toggle="collapse" data-target="#items">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+          <ul class="nav navbar-nav visible-lg visible-md visible-sm">
+            <li><a href="Chiu-Ming Lam_Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Info <span class="caret"></span> </a>
+              <ul class="dropdown-menu">
+                <li id="contact-info-dropdown-items"> <a href="tel:7187857960"><span class="glyphicon glyphicon-earphone"></span> Phone: 718-785-7960</a> </li>
+                <li id="contact-info-dropdown-items"> <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=edlam711@gmail.com"> <span class="glyphicon glyphicon-envelope"></span> Email: edlam711@gmail.com </a> </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav visible-lg visible-md visible-sm pull-right social-icons-area">
+            <li><a href="https://www.linkedin.com/in/eddie-chiuming-lam/" target="_blank"><img src="images/linkedinlogo.png" alt="LinkedIn Logo" class="social-icons"></a></li>
+            <li><a href="https://github.com/Coddielam" target="_blank"><img src="images/githublogo.png" alt="GitHub Logo" class="social-icons"></a></li>
+          </ul>
+
+          <!-- content for toggling -- toggle button -->
+          <div class="collapse navbar-collapse" id="items">
+            <ul class="nav navbar-nav visible-xs">
+              <li><a href="Chiu-Ming Lam_Resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="#progLangNameEnd">Projects</a></li>
+              <li><a href="#">Contact Info</a></li>
+              <li><a href="tel:7187857960"><span class="glyphicon glyphicon-earphone"></span> Phone: 718-785-7960</a> </li>
+              <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=edlam711@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span> Email: edlam711@gmail.com</a></li>
+
+              <hr/>
+              <li class="social-icons-area">
+                <span><a href="https://www.linkedin.com/in/eddie-chiuming-lam/" target="_blank"><img src="images/linkedinlogo.png" alt="LinkedIn Logo" class="social-icons"></a></span>
+                <span><a href="https://github.com/Coddielam" target="_blank"><img src="images/githublogo.png" alt="GitHub Logo" class="social-icons"></a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <img class = "visible-md visible-lg" src="images/EddieLamPicture.jpg" id="profile_picture">
+          </div>
+          <div class="col-lg-7 col-md-7">
+            <section id="self-intro">
+              <h2>Hello, I am Eddie!</h2>
+              <p>I am a recent college graduate from Suffolk University.<br>
+                At Suffolk, I studied Management Information System.<br>
+                In my free time, I study programming and machine learning.
+              </p>
+            </section>
+          </div>
+        </div> 
+        <hr/>     
+      </div>
+      
+      <div class="text-center"><h3>Programming Languages I Know</h3></div>
+      <div class="container">
+        <div>
+          <ul class="language-list">
+            <li> <img src="images/pythonLogo.png" alt="Python" class="language-icons"> <p id="progLangName">Python</p> </li>
+            <li> <img src="images/Rlogo.png" alt="R" class="language-icons" > <p id="progLangName" >R</p> </li>
+            <li> <img src="images/JavaScript.png" alt="JavaScript" class="language-icons"> <p id="progLangName" >JavaScript</p></li>
+            <li> <img src="images/html-css-logo.png" alt="HTML/CSS" class="language-icons" > <p id="progLangName" >HTML/CSS</p> </li>
+          </ul>
+        </div>
+        <hr id="progLangNameEnd"/>
+      </div>
+
+      <div class="text-center"><h3 id="project-section">Projects</h3></div>
+
+      <div class="container">
+
+        <div class="row">
+          <!-- project -->
+          <a class="container col-lg-12 col-xs-12" id="projectContainerBox" target="_blank" href="https://github.com/Coddielam/MachineLearningProjects/blob/master/Titanic_Machine_Learning_Project_ChiuMing_Lam.ipynb">
+            <div class="row" id="projectBox">
+              <div id="imageSpace" class="col-lg-6 col-md-6 TitanicImage">
+                <img src="images/TitanicTree.png" alt="Titanic Decision Tree">
+              </div>
+
+              <div class="col-lg-6 col-md-6 projectSummary">
+                <h3>Machine Learning: Titanic Project</h3>
+                <i class="language-used">Language: Python</i>
+                <p>On April 15, the widely considered "unsinkable" Titanic sank after coliding with iceberg;
+                  resulting in the death of 1502 out of 2224 passengers and crew.
+                  While there was some element of luck involved in surviving, some group seems more likely to survive than others.
+                  In this kaggle challenge, the goal is to develop a predictive model that predicts what sorts of people were more likely to survive.
+                </p>
+              </div>
+            </div>
+          </a>
+          <!-- project -->
+          <a class="container col-lg-12 col-xs-12" id="projectContainerBox" target="_blank" href="https://github.com/Coddielam/MachineLearningProjects/blob/master/AirbnbEddie/Airbnb_NewYork_PCA_(Eddie)ChiuMingLam.ipynb">
+            <div class="row" id="projectBox">
+              <div id="imageSpace" class="col-lg-6 col-md-6">
+                <img src="images/PCA_Screeplot.png" alt="New York PCA" id="abnb_screeplot">
+              </div>
+              <div class="col-lg-6 col-md-6 projectSummary">
+                <h3>Machine Learning: Airbnb Unsupervised Learning</h3>
+                <i class="language-used">Language: R</i>
+                <p>Many people tried to use the New York Airbnb dataset to predict the prices of the listing. 
+                  However, since the prices of the listings are set by the hosts based on the recommendations from Airbnb's smart pricing system, predicting prices might not be the most sensible analysis. 
+                  When relationships between variables are unclear, it's oftentimes a good idea to explore the variables with unsupervised learning techniques. In this dataset, 
+                  I conducted a Principal Component Analysis to identify the factors that set aparts the 5 major neighborhood groups: Brooklyn, Manhattan, Brooklyn, Bronx, Queens, and Staten Island.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 footer-infosign"><span class="glyphicon glyphicon-info-sign"></span></div>
+          <div class="col-lg-9">
+            <h3><i>Little bit about this website</i> </h3>
+            <p> This website is a personal static website project; built with HTML/CSS, Bootstrap, and a little bit of JavaScript :) </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
