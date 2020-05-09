@@ -80,7 +80,7 @@ ul.navbar-nav li.social-icons-area {
 /* profile image */
 img#profile_picture{
 	display: block;
-	margin-left: 180px;
+	margin-left: auto;
 	margin-right: auto;
 	width: 30%;
 	border-radius: 50%;
@@ -193,6 +193,11 @@ img#abnb_screeplot {
 @media (max-width:991px) {
 	/* set the self intro to center */
 	section#self-intro {
+		text-align: center;
+	}
+}
+@media (max-width:767px) {
+	.footer-infosign{
 		text-align: center;
 	}
 }
