@@ -6,6 +6,6 @@ $(function () {
         }
     });
 });
-
+console.log("imported");
 // document.querySelector("#navbarToggle").addEventListener("blur", function(){});
 
