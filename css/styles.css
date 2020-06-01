@@ -130,7 +130,7 @@ img#profile_picture {
   display: inline-block;
   position: relative;
   animation-duration: 12s;
-  /* animation-timing-function: steps(19, end); */
+  animation-timing-function: steps(19, end);
   animation-iteration-count: infinite;
 }
 
