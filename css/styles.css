@@ -120,17 +120,16 @@ img#profile_picture {
 
 .message2 {
   animation: message2;
-  animation-timing-function: steps(90, end);
+  animation-timing-function: steps(35, end);
 }
 
 .message1,
 .message2 {
   overflow: hidden;
   white-space: nowrap;
-  display: inline-block;
   position: relative;
-  animation-duration: 12s;
-  animation-timing-function: steps(19, end);
+  display: inline-block;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 
@@ -310,5 +309,9 @@ img#abnb_screeplot {
     90% {
       width: 7.7em;
     }
+  }
+
+  .message2 {
+    display: none;
   }
 }
