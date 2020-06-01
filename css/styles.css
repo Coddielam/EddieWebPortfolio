@@ -306,18 +306,30 @@ img#abnb_screeplot {
   }
 
   @keyframes message1 {
-    0%,
-    100% {
-      width: 0;
+    0% {
+      width: 0em;
     }
-    20%,
-    90% {
+    100% {
       width: 7.7em;
     }
   }
 
   .message1 {
-    animation-duration: 6s;
+    animation-duration: 1.5s;
+    animation-iteration-count: inherit;
+  }
+
+  .message1::after {
+    content: "|";
+    color: transparent;
+    position: sticky;
+    right: 1;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+    background-color: rgba(0, 0, 0, 0.739);
+    height: 25px;
+    top: 4px;
   }
 
   .message2 {
