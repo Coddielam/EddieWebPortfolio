@@ -12,6 +12,7 @@ body {
   padding-top: 80px;
   /* padding-bottom: 80px; */
   min-height: 100%;
+  background: -webkit-linear-gradient(#ffffff, #e0f3ffc7);
 }
 html {
   min-height: 100%;
@@ -27,16 +28,22 @@ main {
   color: rgb(0, 120, 233);
   font-size: 20px;
   line-height: 29px;
+  transition: color 0.2s;
+  transition: transform 0.5s;
 }
 .navbar-default .navbar-brand:hover {
   color: rgba(255, 166, 0, 0.911);
-}
-.navbar-default .navbar-nav li:hover {
-  background-color: silver;
-  color: black;
+  transform: scale(1.2);
 }
 .navbar-default .navbar-nav > li > a {
   color: black;
+  transition: color 0.2s;
+  transition: transform 0.5s;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: rgba(130, 130, 255, 0.822);
+  transform: scale(1.15);
 }
 
 li#contact-info-dropdown-items {
@@ -50,6 +57,12 @@ li#contact-info-dropdown-items {
 }
 .dropdown-menu > li > a {
   padding: 20px;
+  transition: color 0.2s;
+  transition: transform 0.5s;
+}
+
+.dropdown-menu > li > a:hover {
+  color: rgba(130, 130, 255, 0.822);
 }
 
 /* right side --  */
@@ -90,8 +103,8 @@ img#profile_picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
-  border-radius: 50%;
+  width: 51%;
+  border-radius: 6%;
   box-shadow: -0.5px 1.9px #cacaca;
 }
 
@@ -102,12 +115,12 @@ img#profile_picture {
 /******************  Body  ***********************/
 /* project item */
 #projectBox {
-  /* background-color: black; */
   margin-top: 10px;
-  border-style: solid;
-  border-color: rgba(133, 133, 133, 0.575);
+  /* border-style: solid; */
+  /* border-color: rgba(133, 133, 133, 0.575); */
   border-radius: 20px;
   border-width: 1.8px;
+  background-color: rgba(255, 255, 255, 0.945);
 }
 
 .language-list {
@@ -141,10 +154,13 @@ a#projectContainerBox:hover {
 }
 
 #projectBox {
-  transition-duration: 0.15s;
+  transition: background-color 0.8s;
+  transition: transform 0.8s;
+  box-shadow: 0.5px 1px 5px rgb(54, 54, 54);
 }
 #projectBox:hover {
-  background-color: rgba(210, 211, 211, 0.151);
+  /* background-color: whitesmoke; */
+  transform: scale(1.01);
 }
 
 #imageSpace {
@@ -185,10 +201,10 @@ img#abnb_screeplot {
   /* position: absolute; */
   bottom: 0;
   width: 100%;
-  background-color: rgba(192, 192, 192, 0.397);
+  background-color: rgba(0, 0, 0, 0.808);
   padding: 20px;
   font-size: larger;
-  color: rgba(235, 0, 90, 0.822);
+  color: rgba(255, 255, 255, 0.952);
 }
 .footer-infosign {
   text-align: right;
