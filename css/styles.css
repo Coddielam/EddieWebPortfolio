@@ -167,7 +167,7 @@ img#profile_picture {
   }
   60%,
   90% {
-    width: 19em;
+    width: 15.3em;
   }
 }
 
@@ -290,6 +290,11 @@ img#abnb_screeplot {
   section#self-intro {
     text-align: center;
   }
+
+  .message1,
+  .message2 {
+    animation-duration: 20s;
+  }
 }
 @media (max-width: 767px) {
   .footer-infosign {
@@ -309,6 +314,10 @@ img#abnb_screeplot {
     90% {
       width: 7.7em;
     }
+  }
+
+  .message1 {
+    animation-duration: 6s;
   }
 
   .message2 {
