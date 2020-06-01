@@ -137,7 +137,7 @@ img#profile_picture {
 .message2::after {
   content: "|";
   color: transparent;
-  position: absolute;
+  position: sticky;
   right: 0;
   animation: caret infinite;
   animation-duration: 1s;
@@ -167,7 +167,7 @@ img#profile_picture {
   }
   60%,
   90% {
-    width: 16.2em;
+    width: 16.1em;
   }
 }
 
