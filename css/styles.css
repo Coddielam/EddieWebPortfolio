@@ -296,4 +296,19 @@ img#abnb_screeplot {
   .footer-infosign {
     text-align: center;
   }
+
+  #projectBox {
+    flex-direction: column;
+  }
+
+  @keyframes message1 {
+    0%,
+    100% {
+      width: 0;
+    }
+    20%,
+    90% {
+      width: 7.7em;
+    }
+  }
 }
